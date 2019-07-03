@@ -1,0 +1,41 @@
+npm init = package.json
+npm install = package-lock.json
+npm install express = node modules
+npm install body-parser
+npm install sequelize
+npm install jsonwebtoken
+npm install mysql2
+
+Tabla de cuenta
+
+id    int(11) Auto Increment    
+user    varchar(20)    
+pass    varchar(20)    
+userID    int(11) (editado) 
+**************
+Tabla de usuario
+id    int(11)    
+nombre    varchar(80)    
+email    varchar(80)    
+role    varchar(20)    
+ubicacion    varchar(100)
+
+id    int(11)    
+nombre    varchar(80)    
+email    varchar(80)    
+role    varchar(20)    
+ubicacion    varchar(100)
+user     varchar(100)
+password    varchar(100) 
+
+ DROP TABLE IF EXISTS `usuarios`;
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `role` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `ubicacion` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `nombre` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `user` varchar(80) NOT NULL,
+  `password` varchar(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
